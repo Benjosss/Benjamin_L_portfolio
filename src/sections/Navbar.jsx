@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {navBarElements} from "../constants/NavBar.js";
+import {Link} from 'react-router-dom';
 
 const NavItems = () => {
     return (
