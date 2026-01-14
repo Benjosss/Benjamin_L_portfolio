@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Link } from "react-router-dom";
 import {navBarElements} from "../constants/NavBar.js";
 
 const NavItems = () => {
@@ -26,9 +27,12 @@ const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
             <div className="mx-auto">
                 <div className="flex justify-between items-center py-5 mx-auto c-space">
-                    <a href={import.meta.env.BASE_URL} className="text-neutral-400 font-bold sm:text-2xl text-xl hover:text-white transition-colors">
+                    <Link
+                        to="/"
+                        className="text-neutral-400 font-bold sm:text-2xl text-xl hover:text-white transition-colors"
+                    >
                         Benjamin
-                    </a>
+                    </Link>
 
                     {/*Small devices*/}
                     <button onClick={toggleOpen} className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex z-30" aria-label="Toggle navigation">

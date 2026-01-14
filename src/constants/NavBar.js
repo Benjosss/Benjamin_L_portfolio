@@ -20,7 +20,7 @@ export const navBarElements = [
         href: '#about'
     },
     {
-        id: 4,
+        id: 5,
         name: 'Contact',
         href: '#contact'
     },
