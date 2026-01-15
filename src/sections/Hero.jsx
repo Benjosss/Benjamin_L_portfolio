@@ -38,6 +38,20 @@ const Hero = () => {
     const sizes = calculateSizes({ isSmallPhone, isLargePhone, isTabletPortrait, isTabletLandscape, isDesktop });
 
 
+    const handleRocketLaunch = (e) => {
+        const rocket = e.currentTarget.querySelector(".rocket");
+
+        if (rocket.classList.contains("rocket-launch")) return;
+
+        rocket.classList.add("rocket-launch");
+
+        setTimeout(() => {
+            rocket.classList.remove("rocket-launch");
+            rocket.style.opacity = "1";
+            rocket.style.transform = "translate(0, 0) rotate(0deg)";
+        }, 3000);
+    };
+
 
     return (
         <section className="min-h-screen w-full flex flex-col relative">
@@ -69,7 +83,18 @@ const Hero = () => {
 
             </div>
 
-
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                <a href="#projects" className="w-fit mx-auto block">
+                    <button
+                        onClick={handleRocketLaunch}
+                        className="flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21] ransition-all active:scale-95 text-white mx-auto sm:w-fit w-full sm:min-w-96 font-medium">
+                        <span className="h-6 w-6 relative flex rocket">
+                            <img src="icons/rocket.png" alt="rocket"/>
+                        </span>
+                        Lets see my projects
+                    </button>
+                </a>
+            </div>
 
         </section>
     )

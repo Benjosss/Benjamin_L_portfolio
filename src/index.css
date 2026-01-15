@@ -55,3 +55,26 @@ body {
     transform: rotate(0deg);
   }
 }
+
+/* ROCKET LAUNCH ANIMATION */
+
+.rocket-launch {
+  animation: rocket-launch 2s ease-in forwards;
+  transform-origin: center;
+}
+
+@keyframes rocket-launch {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translate(10px, -20px) scale(1.05);
+  }
+
+  100% {
+    transform: translate(300px, -400px) scale(0.8);
+    opacity: 0;
+  }
+}
