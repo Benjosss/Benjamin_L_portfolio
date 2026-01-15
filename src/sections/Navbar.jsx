@@ -26,9 +26,7 @@ const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
             <div className="mx-auto">
                 <div className="flex justify-between items-center py-5 mx-auto c-space">
-                    <p
-                        className="text-neutral-400 font-bold sm:text-2xl text-xl hover:text-white transition-colors"
-                    >
+                    <p className={` font-bold sm:text-2xl text-xl hover:text-white transition-colors ${isOpen ? 'text-black' : 'text-neutral-400'}`}>
                         Benjamin
                     </p>
 
