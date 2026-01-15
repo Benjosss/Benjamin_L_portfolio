@@ -11,11 +11,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/vite": "^4.1.18",
+    "leva": "^0.10.1",
+    "maath": "^0.10.8",
     "postcss": "^8.5.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-responsive": "^10.0.1",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
