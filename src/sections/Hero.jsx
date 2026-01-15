@@ -2,7 +2,7 @@ import React, {Suspense} from 'react'
 import {Canvas} from "@react-three/fiber";
 import {useMediaQuery} from "react-responsive";
 import CanvasLoader from "../components/CanvasLoader.jsx";
-import {PerspectiveCamera} from "@react-three/drei";
+import {PerspectiveCamera, SpotLight} from "@react-three/drei";
 import Computer from "../components/Computer.jsx"
 import {calculateSizes} from "../constants/HeroComputerSizes.js";
 import PointerCamera from "../components/PointerCamera.jsx";
@@ -77,6 +77,7 @@ const Hero = () => {
                         </PointerCamera>
                         <ambientLight intensity={1}/>
                         <directionalLight position={[10, 10, 10]} intensity={1.5}/>
+                        <directionalLight position={[30, 30, 30]} intensity={1.0} />
 
                     </Suspense>
                 </Canvas>

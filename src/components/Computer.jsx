@@ -358,7 +358,7 @@ const Computer = (props) => {
                     geometry={nodes.Object_123.geometry}
                     material={materials.sfCQkHOWyrsLmor}
                 >
-                    <meshMatcapMaterial map={screenTxt} />
+                    <meshStandardMaterial map={screenTxt} />
                 </mesh>
                 <mesh
                     castShadow
