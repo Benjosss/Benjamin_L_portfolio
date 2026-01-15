@@ -11,7 +11,7 @@ import {useGLTF, useTexture} from '@react-three/drei'
 const Computer = (props) => {
     const { nodes, materials } = useGLTF('models/computer.glb')
 
-    const screenTxt = useTexture('textures/sun.jpg')
+    const screenTxt = useTexture('textures/computer_screen.jpg')
 
     return (
         <group {...props} dispose={null}>
