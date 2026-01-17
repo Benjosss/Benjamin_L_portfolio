@@ -6,8 +6,8 @@ export const navBarElements = [
     },
     {
         id: 2,
-        name: 'Projects',
-        href: '#projects'
+        name: 'About',
+        href: '#about'
     },
     {
         id: 3,
@@ -16,8 +16,8 @@ export const navBarElements = [
     },
     {
         id: 4,
-        name: 'About',
-        href: '#about'
+        name: 'Projects',
+        href: '#projects'
     },
     {
         id: 5,
