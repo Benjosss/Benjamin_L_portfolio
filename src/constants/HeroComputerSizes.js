@@ -18,7 +18,7 @@ export const calculateSizes = () => {
     if (height <= 700) {
         positionY = aspectRatio > 1 ? -3 : 1;
     } else if (height <= 900) {
-        positionY = aspectRatio > 1 ? -2 : 2;
+        positionY = aspectRatio > 1 ? -3 : 2;
     } else {
         positionY = aspectRatio > 1 ? -1 : 2.5;
     }
