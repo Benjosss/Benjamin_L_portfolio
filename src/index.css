@@ -17,6 +17,18 @@ body {
   .text-gray_gradient{
     @apply bg-linear-to-r from-slate-500 to-slate-300 bg-clip-text text-transparent;
   }
+
+  .grid-container {
+    @apply w-full h-full border border-[#1C1C21] bg-[#0e0E10] rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+  }
+
+  .grid-headtext {
+    @apply text-xl font-semibold mb-2 text-white;
+  }
+
+  .grid-subtext {
+    @apply text-[#afb0b6] text-base;
+  }
 }
 
 /* WAVING HAND ANIMATION */
