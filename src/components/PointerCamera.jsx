@@ -12,7 +12,7 @@ const PointerCamera = ({children, isMobile}) => {
         const zoom = 1 + (-state.pointer.y * 0.1);
 
         if(!isMobile){
-            easing.dampE(groupRef.current.rotation, [-state.pointer.y / 3 , -state.pointer.x / 5, 0],
+            easing.dampE(groupRef.current.rotation, [-state.pointer.y / 9 , -state.pointer.x / 5, 0],
                 0.25, delta)
             easing.damp3(
                 groupRef.current.scale,

@@ -52,34 +52,37 @@ const Hero = () => {
         }, 3000);
     };
 
+    const ScalingFactor = window.innerWidth / 1300;
 
     return (
         <section className="min-h-screen w-full flex flex-col relative">
             <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
                 <p className="sm:text-3xl text-2xl font-medium text-white text-center">Hi, I'm Benjamin <span className="waving-hand">👋</span></p>
-                <p className="text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-black leading-normal text-gray_gradient">
+                <p className=" z-30 text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-black leading-normal text-gray_gradient">
                     Computer Science student
                 </p>
             </div>
 
-            <div className="w-full h-full absolute inset-0">
+            <div className="w-full h-full absolute inset-0 z-10">
                 <Canvas className="w-full h-full">
-                    <Suspense fallback={<CanvasLoader />}>
-                        <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
-                        <PointerCamera isMobile={isSmallPhone || isLargePhone}>
-                            <Computer
+                    <group>
+                        <Suspense fallback={<CanvasLoader />}>
+                            <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
+                            <PointerCamera isMobile={isSmallPhone || isLargePhone}>
+                                <Computer
 
-                                position={sizes.computerPosition}
-                                rotation={sizes.computerRotation}
-                                scale={sizes.computerScale}
+                                    position={sizes.computerPosition}
+                                    rotation={sizes.computerRotation}
+                                    scale={sizes.computerScale}
 
-                            />
-                        </PointerCamera>
-                        <ambientLight intensity={1}/>
-                        <directionalLight position={[10, 10, 10]} intensity={1.5}/>
-                        <directionalLight position={[30, 30, 30]} intensity={1.0} />
+                                />
+                            </PointerCamera>
+                            <ambientLight intensity={1}/>
+                            <directionalLight position={[10, 10, 10]} intensity={1.5}/>
+                            <directionalLight position={[30, 30, 30]} intensity={1.0} />
 
-                    </Suspense>
+                        </Suspense>
+                    </group>
                 </Canvas>
 
             </div>
