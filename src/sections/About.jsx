@@ -8,7 +8,7 @@ const About = () => {
                             <p className="grid-headtext">I'm Benjamin,</p>
                             <p className="grid-subtext">I'm currently in third year of bachelor degree at the UFR MIM, France</p>
                         </div>
-                        <img src="assets/grid_1.png" alt="grid_1"  className="w-full sm:h-[276px] h-fit object-contain" />
+                        <img src="icons/grid_1.png" alt="grid_1"  className="w-full sm:h-[276px] h-fit object-contain" />
                     </div>
                 </div>
 
