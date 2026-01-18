@@ -91,7 +91,7 @@ const Hero = () => {
                 <a href="#projects" className="w-fit mx-auto block">
                     <button
                         onClick={handleRocketLaunch}
-                        className="flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21] ransition-all active:scale-95 text-white mx-auto sm:w-fit w-full sm:min-w-96 font-medium">
+                        className="flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21] transition-all active:scale-95 text-white mx-auto sm:w-fit w-full sm:min-w-96 font-medium">
                         <span className="h-6 w-6 relative flex rocket">
                             <img src="icons/rocket.png" alt="rocket"/>
                         </span>
