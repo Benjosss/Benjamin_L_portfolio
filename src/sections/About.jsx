@@ -49,8 +49,8 @@ const About = () => {
                                 and implemented several important <span className="font-semibold">algorithms</span> and
                                 <span className="font-semibold"> programming paradigms</span>.
                             </p>
-                            <img src="icons/grid_2.png" alt="grid_1"  className="w-full sm:h-[276px] h-fit object-contain" />
                         </div>
+                        <img src="icons/grid_2.png" alt="grid_1"  className="w-full sm:h-[276px] h-fit object-contain" />
                     </div>
                 </div>
                 <div className="col-span-1 xl:row-span-4">
@@ -78,6 +78,39 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                <div className="xl:col-span-2 xl:row-span-3">
+                    <div className="grid-container">
+                        <div>
+                            <p className="grid-headtext">My passion for coding (since middle school)</p>
+                            <p className="grid-subtext">
+                                Over the past several years, I have developed a passion for computer science,
+                                which led me to start programming, first as
+                                a <span className="font-semibold">self-taught</span> learner,
+                                then to pursue a <span className="font-semibold">bachelor's degree </span>
+                                in computer science.
+                                I enjoy finding <span className="font-semibold">solutions </span>
+                                and <span className="font-semibold">alternatives</span> to everyday problems through computer science and programming.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="xl:col-span-1 xl:row-span-2">
+                    <div className="grid-container">
+                        <div>
+                            <p className="grid-headtext">My hobbies</p>
+                            <p className="grid-subtext">
+                                Alongside my studies, I have developed a passion and skills for
+                                <span className="font-semibold"> 3D printing</span>,
+                                a rapidly growing technology that will undoubtedly become standard in the coming years.
+                                In addition, I have been involved in
+                                <span className="font-semibold"> the defense sector </span>
+                                for several years now,
+                                so I can combine this passion with my main activity: IT.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </section>
