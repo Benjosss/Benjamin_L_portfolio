@@ -9,6 +9,10 @@ body {
   font-family: 'General Sans', sans-serif;
 }
 
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;
