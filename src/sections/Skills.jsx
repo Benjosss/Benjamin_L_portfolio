@@ -12,6 +12,9 @@ const Skills = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
     };
 
 
@@ -24,14 +27,14 @@ const Skills = () => {
                         <div key={name}>
                             <p className="grid-headtext">{name}</p>
                             <div className="grid-subtext flex flex-col md:flex-row items-center gap-6">
-                                <p className='md:w-1/2'>
+                                <ul className='md:w-1/2 sm:pl-5 pl-0'>
                                     {elements.map((element, idx) => (
-                                        <span key={`${idx}-${element}`}>
+                                        <li key={`${idx}-${element}`} className="sm:list-disc list-none">
                                             {element}
-                                            {idx < elements.length - 1 && " - "}
-                                        </span>
+                                            {/*{idx < elements.length - 1 && " - "}*/}
+                                        </li>
                                     ))}
-                                </p>
+                                </ul>
                                 <img key={`${id}-${name}`} src={image} alt={name} className="md:w-1/2 w-full sm:h-[276px] h-fit object-contain" />
                             </div>
                         </div>
